@@ -1,0 +1,359 @@
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice
+$ clone https://github.com/Khan8312/devopsweek12bParctice.git
+bash: clone: command not found
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice
+$ git clone https://github.com/Khan8312/devopsweek12bParctice.git
+Cloning into 'devopsweek12bParctice'...
+warning: You appear to have cloned an empty repository.
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice
+$ cd devopsweek12bPractice
+bash: cd: devopsweek12bPractice: No such file or directory
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice
+$
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice
+$ cd gitActions practice
+bash: cd: too many arguments
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice
+$ cd devopsweek12bParctice
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (main)
+$ git branch -m develop
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (develop)
+$ git config --local user.name "khan"
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (develop)
+$ git config --local user.email "khan@gmail.com"
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (develop)
+$ git config --local core.editor notepad
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (develop)
+$ node -v
+v20.18.0
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (develop)
+$ npm -v
+10.8.2
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (develop)
+$ touch .gitignore
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (develop)
+$ notepad .gitignore
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (develop)
+$ npm init -y
+Wrote to C:\Users\l1f21bsse0470\Desktop\gitActions practice\devopsweek12bParctice\package.json:
+
+{
+  "name": "devopsweek12bparctice",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
+
+
+
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (develop)
+$ notepad package.json
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (develop)
+$ code .
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (develop)
+$ git add .
+warning: LF will be replaced by CRLF in package.json.
+The file will have its original line endings in your working directory
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (develop)
+$ git commit -m "initial commit"
+[develop (root-commit) f4bd576] initial commit
+ 2 files changed, 15 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 package.json
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (develop)
+$ git remote -v
+origin  https://github.com/Khan8312/devopsweek12bParctice.git (fetch)
+origin  https://github.com/Khan8312/devopsweek12bParctice.git (push)
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (develop)
+$ git push -u origin develop
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 438 bytes | 438.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Khan8312/devopsweek12bParctice.git
+ * [new branch]      develop -> develop
+Branch 'develop' set up to track remote branch 'develop' from 'origin'.
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (develop)
+$ git branch feature/ci-wf
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (develop)
+$ git switch feature/ci-wf
+Switched to branch 'feature/ci-wf'
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/ci-wf)
+$ mkdir -p ./.github/workflows
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/ci-wf)
+$ touch ./.github/workflows/ci.yaml
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/ci-wf)
+$ code.
+bash: code.: command not found
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/ci-wf)
+$ code .
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/ci-wf)
+$ git status
+On branch feature/ci-wf
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .github/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/ci-wf)
+$ git add .
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/ci-wf)
+$ git commit -m "add ci yml"
+[feature/ci-wf 7bd5fe2] add ci yml
+ 1 file changed, 18 insertions(+)
+ create mode 100644 .github/workflows/ci.yaml
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/ci-wf)
+$ git push origin feature/ci-wf
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 574 bytes | 574.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'feature/ci-wf' on GitHub by visiting:
+remote:      https://github.com/Khan8312/devopsweek12bParctice/pull/new/feature/ci-wf
+remote:
+To https://github.com/Khan8312/devopsweek12bParctice.git
+ * [new branch]      feature/ci-wf -> feature/ci-wf
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/ci-wf)
+$ code .
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/ci-wf)
+$ touch .htmlhintrc.json
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/ci-wf)
+$ node .htmlhintrc.json
+node:internal/modules/cjs/loader:1569
+    throw err;
+    ^
+
+SyntaxError: C:\Users\l1f21bsse0470\Desktop\gitActions practice\devopsweek12bParctice\.htmlhintrc.json: Unexpec
+ted end of JSON input
+    at parse (<anonymous>)
+    at Module._extensions..json (node:internal/modules/cjs/loader:1566:39)
+    at Module.load (node:internal/modules/cjs/loader:1288:32)
+    at Module._load (node:internal/modules/cjs/loader:1104:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:174:12)
+    at node:internal/main/run_main_module:28:49
+
+Node.js v20.18.0
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/ci-wf)
+$ code .
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/ci-wf)
+$ git status
+On branch feature/ci-wf
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   .github/workflows/ci.yaml
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .htmlhintrc.json
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/ci-wf)
+$ git add .
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/ci-wf)
+$ git commit -m "modigied ci.yaml and added .htmlhinterc.json"
+[feature/ci-wf 23e477f] modigied ci.yaml and added .htmlhinterc.json
+ 2 files changed, 10 insertions(+)
+ create mode 100644 .htmlhintrc.json
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/ci-wf)
+$ git push origin feature/ci-wf
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 640 bytes | 640.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Khan8312/devopsweek12bParctice.git
+   7bd5fe2..23e477f  feature/ci-wf -> feature/ci-wf
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/ci-wf)
+$ git push origin feature/ci-wf
+Everything up-to-date
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/ci-wf)
+$ git switch develop
+Switched to branch 'develop'
+Your branch is up to date with 'origin/develop'.
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (develop)
+$ git pull origin develop
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 896 bytes | 224.00 KiB/s, done.
+From https://github.com/Khan8312/devopsweek12bParctice
+ * branch            develop    -> FETCH_HEAD
+   f4bd576..4f00c37  develop    -> origin/develop
+Updating f4bd576..4f00c37
+Fast-forward
+ .github/workflows/ci.yaml | 23 +++++++++++++++++++++++
+ .htmlhintrc.json          |  5 +++++
+ 2 files changed, 28 insertions(+)
+ create mode 100644 .github/workflows/ci.yaml
+ create mode 100644 .htmlhintrc.json
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (develop)
+$ git branch feature/index
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (develop)
+$ git switch featuelindex
+fatal: invalid reference: featuelindex
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (develop)
+$ git switch featue/index
+fatal: invalid reference: featue/index
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (develop)
+$ git switch feature/index
+Switched to branch 'feature/index'
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/index)
+$ mkdir ./src
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/index)
+$ touch ./src/index.html
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/index)
+$ code .
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/index)
+$ git add .
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/index)
+$ git push commit -m "inital html file commit"
+error: unknown switch `m'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    -d, --delete          delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --force-if-includes   require remote updates to be integrated locally
+    --recurse-submodules (check|on-demand|no)
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=(yes|no|if-asked)]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+    -o, --push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/index)
+$
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/index)
+$ git  commit -m "inital html file commit"
+[feature/index f886e19] inital html file commit
+ 1 file changed, 11 insertions(+)
+ create mode 100644 src/index.html
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/index)
+$ git push origin feature/index
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 469 bytes | 469.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'feature/index' on GitHub by visiting:
+remote:      https://github.com/Khan8312/devopsweek12bParctice/pull/new/feature/index
+remote:
+To https://github.com/Khan8312/devopsweek12bParctice.git
+ * [new branch]      feature/index -> feature/index
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/index)
+$ code .
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/index)
+$ git add .
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/index)
+$ git  commit -m "inital html file commit updated"
+[feature/index 30135b5] inital html file commit updated
+ 1 file changed, 1 deletion(-)
+
+l1f21bsse0470@UCP-LBA-205A-39 MINGW64 ~/Desktop/gitActions practice/devopsweek12bParctice (feature/index)
+$ git push origin feature/index
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 331 bytes | 331.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Khan8312/devopsweek12bParctice.git
+   f886e19..30135b5  feature/index -> feature/index
+
